@@ -38,7 +38,7 @@ public class HUD
     private static HUD INSTANCE = new HUD();
     private final Setting<Boolean> renderingUp = this.register(new Setting<Boolean>("RenderingUp", Boolean.valueOf(false), "Orientation of the HUD-Elements."));
     private final Setting<WaterMark> watermark = this.register(new Setting<WaterMark>("Logo", WaterMark.NONE, "WaterMark"));
-    private final Setting<String> customWatermark = this.register(new Setting<String>("WatermarkName", "megyn.club b1"));
+    private final Setting<String> customWatermark = this.register(new Setting<String>("WatermarkName", "aaaaaa"));
     private final Setting<Boolean> modeVer = this.register(new Setting<Object>("Version", Boolean.valueOf(false), v -> this.watermark.getValue() != WaterMark.NONE));
     private final Setting<Boolean> arrayList = this.register(new Setting<Boolean>("ActiveModules", Boolean.valueOf(false), "Lists the active modules."));
     private final Setting<Boolean> moduleColors = this.register(new Setting<Object>("ModuleColors", Boolean.valueOf(false), v -> this.arrayList.getValue()));
@@ -204,11 +204,11 @@ public class HUD
         final String grayString = this.grayNess.getValue() ? "7" : "";
         switch (this.watermark.getValue()) {
             case PHOBOX: {
-                this.renderer.drawString("PhoboX" + (this.modeVer.getValue() ? " v1.0" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
+                this.renderer.drawString("PhoboX" + (this.modeVer.getValue() ? " v1.1" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
                 break;
             }
             case NOTGAY: {
-                this.renderer.drawString("PhoboxNotGay" + (this.modeVer.getValue() ? " v1.0" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
+                this.renderer.drawString("PhoboxNotGay" + (this.modeVer.getValue() ? " v1.1" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
                 break;
             }
             case CUSTOM: {
