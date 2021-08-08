@@ -18,9 +18,9 @@ public class ClickGui
     public Setting<Boolean> rainbowRolling = this.register(new Setting<Object>("RollingRainbow", Boolean.valueOf(false), v -> this.colorSync.getValue() != false && Colors.INSTANCE.rainbow.getValue() != false));
     public Setting<String> prefix = this.register(new Setting<String>("Prefix", ".").setRenderName(true));
     public Setting<Integer> red = this.register(new Setting<Integer>("Red", 255, 0, 255));
-    public Setting<Integer> green = this.register(new Setting<Integer>("Green", 0, 0, 255));
-    public Setting<Integer> blue = this.register(new Setting<Integer>("Blue", 0, 0, 255));
-    public Setting<Integer> hoverAlpha = this.register(new Setting<Integer>("Alpha", 180, 0, 255));
+    public Setting<Integer> green = this.register(new Setting<Integer>("Green", 83, 0, 255));
+    public Setting<Integer> blue = this.register(new Setting<Integer>("Blue", 194, 0, 255));
+    public Setting<Integer> hoverAlpha = this.register(new Setting<Integer>("Alpha", 194, 0, 255));
     public Setting<Integer> alpha = this.register(new Setting<Integer>("HoverAlpha", 240, 0, 255));
     public Setting<Boolean> customFov = this.register(new Setting<Boolean>("CustomFov", false));
     public Setting<Float> fov = this.register(new Setting<Object>("Fov", Float.valueOf(150.0f), Float.valueOf(-180.0f), Float.valueOf(180.0f), v -> this.customFov.getValue()));
