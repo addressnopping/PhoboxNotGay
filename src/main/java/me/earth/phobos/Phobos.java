@@ -13,11 +13,11 @@ import org.lwjgl.opengl.Display;
 
 import java.io.IOException;
 
-@Mod(modid = "phobox", name = "PhoboxNotGay", version = "1.0")
+@Mod(modid = "phobox", name = "PhoboxNotGay", version = "1.1")
 public class Phobos {
     public static final String MODID = "phobox";
     public static final String MODNAME = "PhoboxNotGay";
-    public static final String MODVER = "1.0";
+    public static final String MODVER = "1.1";
     public static final String NAME_UNICODE = "PhoboxNotGay";
     public static final String PHOBOS_UNICODE = "PhoboX";
     public static final String CHAT_SUFFIX = " \u23d0 PhoboxNotGay";
@@ -57,7 +57,7 @@ public class Phobos {
     }
 
     public static void load() {
-        LOGGER.info("\n\nLoading PhoboxNotGay 1.0");
+        LOGGER.info("\n\nLoading PhoboxNotGay");
         unloaded = false;
         if (reloadManager != null) {
             reloadManager.unload();
@@ -103,7 +103,7 @@ public class Phobos {
     }
 
     public static void unload(boolean unload) {
-        LOGGER.info("\n\nUnloading PhoboxNotGay 1.0");
+        LOGGER.info("\n\nUnloading PhoboxNotGay");
         if (unload) {
             reloadManager = new ReloadManager();
             reloadManager.init(commandManager != null ? commandManager.getPrefix() : ".");
@@ -157,17 +157,13 @@ public class Phobos {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        LOGGER.info("ohare is cute!!!");
-        LOGGER.info("faggot above - 3vt");
-        LOGGER.info("megyn wins again");
-        LOGGER.info("gtfo my logs - 3arth");
         LOGGER.info("not gay anymore - Peterrr__");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         customMainScreen = new GuiCustomMainScreen();
-        Display.setTitle("PhoboxNotGay - v.1.0");
+        Display.setTitle("PhoboxNotGay - v.1.1");
         Phobos.load();
     }
 }
