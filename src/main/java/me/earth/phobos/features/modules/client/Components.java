@@ -44,7 +44,7 @@ public class Components
         extends Module {
     private static final ResourceLocation box = new ResourceLocation("textures/gui/container/shulker_box.png");
     private static final double HALF_PI = 1.5707963267948966;
-    public static ResourceLocation logo = new ResourceLocation("textures/phobos.png");
+    public static ResourceLocation logo = new ResourceLocation("textures/phobox.png");
     public Setting<Boolean> inventory = this.register(new Setting<Boolean>("Inventory", false));
     public Setting<Integer> invX = this.register(new Setting<Object>("InvX", Integer.valueOf(564), Integer.valueOf(0), Integer.valueOf(1000), v -> this.inventory.getValue()));
     public Setting<Integer> invY = this.register(new Setting<Object>("InvY", Integer.valueOf(467), Integer.valueOf(0), Integer.valueOf(1000), v -> this.inventory.getValue()));
