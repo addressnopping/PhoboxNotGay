@@ -132,7 +132,7 @@ public class AutoGG
         this.loadMessages();
         Random rand = new Random();
         if (this.messages.size() == 0) {
-            return "<player> is a noob hahaha fobus on tope";
+            return "<player> got destroyed by PhoboxNotGay >:)";
         }
         if (this.messages.size() == 1) {
             return this.messages.get(0);
