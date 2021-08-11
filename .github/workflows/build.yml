@@ -29,6 +29,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
        # Artifact name
-       name: NegroWare
+       name: PhoboxNotGay
        # A file, directory or wildcard pattern that describes what to upload
-       path: ./build/libs/*-release.jar
+       path: ./build/libs/*.jar
