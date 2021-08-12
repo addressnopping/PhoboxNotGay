@@ -201,7 +201,7 @@ public class HUD
         } else if (!this.rainbow.getValue()) {
             this.color = (this.colorSync.getValue() ? Colors.INSTANCE.getCurrentColorHex() : ColorUtil.toRGBA(this.hudRed.getValue(), this.hudGreen.getValue(), this.hudBlue.getValue()));
         }
-        final String grayString = this.grayNess.getValue() ? "7" : "";
+        final String grayString = this.grayNess.getValue() ? "" : "";
         switch (this.watermark.getValue()) {
             case PHOBOX: {
                 this.renderer.drawString("PhoboX" + (this.modeVer.getValue() ? " v1.1" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
