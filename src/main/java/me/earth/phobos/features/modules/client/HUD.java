@@ -402,7 +402,7 @@ public class HUD
             Phobos.notificationManager.handleNotifications(height - (j + 16));
         }
         k = ((HUD.mc.currentScreen instanceof GuiChat) ? 14 : 0);
-        final String coordinates = grayString + "XYZ " + posX + ", " + posY + ", " + posZ + " " + "r" + grayString + "[" + hposX + ", " + hposZ + "r" + grayString + "]";
+        final String coordinates = grayString + "XYZ " + posX + ", " + posY + ", " + posZ + " " + grayString + "[" + hposX + ", " + hposZ + grayString + "]";
         final String text4 = (this.direction.getValue() ? (Phobos.rotationManager.getDirection4D(false) + " ") : "") + (this.coords.getValue() ? coordinates : "") + "";
         final TextManager renderer12 = this.renderer;
         final String text16 = text4;
