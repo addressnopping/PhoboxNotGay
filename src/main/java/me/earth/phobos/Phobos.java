@@ -13,11 +13,11 @@ import org.lwjgl.opengl.Display;
 
 import java.io.IOException;
 
-@Mod(modid = "phobox", name = "PhoboxNotGay", version = "1.1")
+@Mod(modid = "phobox", name = "PhoboxNotGay", version = "1.2")
 public class Phobos {
     public static final String MODID = "phobox";
     public static final String MODNAME = "PhoboxNotGay";
-    public static final String MODVER = "1.1";
+    public static final String MODVER = "1.2";
     public static final String NAME_UNICODE = "PhoboxNotGay";
     public static final String PHOBOS_UNICODE = "PhoboX";
     public static final String CHAT_SUFFIX = " \u23d0 PhoboxNotGay";
@@ -163,7 +163,7 @@ public class Phobos {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         customMainScreen = new GuiCustomMainScreen();
-        Display.setTitle("PhoboxNotGay - v.1.1");
+        Display.setTitle("PhoboxNotGay - v" + Phobos.MODVER);
         Phobos.load();
     }
 }
