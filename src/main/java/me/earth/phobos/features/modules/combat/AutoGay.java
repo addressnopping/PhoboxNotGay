@@ -295,10 +295,6 @@ public class AutoGay
                 return;
             }
             this.realTarget = this.target;
-            if (AutoGG.getINSTANCE().isOn()) {
-                AutoGG autoGG = (AutoGG) Phobos.moduleManager.getModuleByName("AutoGG");
-                autoGG.addTargetedPlayer(this.target.getName());
-            }
             
             int slot = InventoryUtil.getItemHotbar(Items.END_CRYSTAL);
             int old = mc.player.inventory.currentItem;
