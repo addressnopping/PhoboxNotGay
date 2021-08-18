@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-
+//why this is getting some random errors?? bruhhhhhhhh
 public class AutoGay
         extends Module {
     private final Timer placeTimer = new Timer();
