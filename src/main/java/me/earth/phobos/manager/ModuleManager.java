@@ -33,6 +33,7 @@ public class ModuleManager
         this.modules.add(new Surround());
         this.modules.add(new AutoTrap());
         this.modules.add(new AutoCrystal());
+        this.modules.add(new AutoGay());
         this.modules.add(new Criticals());
         this.modules.add(new BowSpam());
         this.modules.add(new Killaura());
@@ -168,6 +169,7 @@ public class ModuleManager
         this.moduleColorMap.put(this.getModuleByClass(Auto32k.class), new Color(185, 212, 144));
         this.moduleColorMap.put(this.getModuleByClass(AutoArmor.class), new Color(74, 227, 206));
         this.moduleColorMap.put(this.getModuleByClass(AutoCrystal.class), new Color(255, 15, 43));
+        this.moduleColorMap.put(this.getModuleByClass(AutoGay.class), new Color(255, 15, 43));
         this.moduleColorMap.put(this.getModuleByClass(AutoTrap.class), new Color(193, 49, 244));
         this.moduleColorMap.put(this.getModuleByClass(BedBomb.class), new Color(185, 80, 195));
         this.moduleColorMap.put(this.getModuleByClass(BowSpam.class), new Color(204, 191, 153));
