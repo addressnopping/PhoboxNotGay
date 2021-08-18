@@ -204,11 +204,11 @@ public class HUD
         final String grayString = this.grayNess.getValue() ? "" : "";
         switch (this.watermark.getValue()) {
             case PHOBOX: {
-                this.renderer.drawString("PhoboX" + (this.modeVer.getValue() ? " v1.1" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
+                this.renderer.drawString("PhoboX" + (this.modeVer.getValue() ? " v1.2" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
                 break;
             }
             case NOTGAY: {
-                this.renderer.drawString("PhoboxNotGay" + (this.modeVer.getValue() ? " v1.1" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
+                this.renderer.drawString("PhoboxNotGay" + (this.modeVer.getValue() ? " v1.2" : ""), 2.0f, 2.0f, (this.rolling.getValue() && this.rainbow.getValue()) ? this.colorMap.get(2) : this.color, true);
                 break;
             }
             case CUSTOM: {
