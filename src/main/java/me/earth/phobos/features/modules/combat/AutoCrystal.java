@@ -222,7 +222,7 @@ public class AutoCrystal
     private boolean addTolowDmg;
 
     public AutoCrystal() {
-        super("PhobossAutoCrystal", "abcdefghijklmnopqrstuvwxyz", Module.Category.COMBAT, true, false, false);
+        super("PhobosAutoCrystal", "abcdefghijklmnopqrstuvwxyz", Module.Category.COMBAT, true, true, false);
         instance = this;
     }
 
