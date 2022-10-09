@@ -25,3 +25,4 @@ gradlew setupDecompWorkspace
 
 gradlew build
 
+e
